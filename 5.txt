@@ -1,0 +1,81 @@
+In Java, the default values of an array depend on the type of the elements it stores. When you create an array but do not initialize its elements, they are automatically initialized with default values. Here are the default values for different types of arrays:
+
+1. Integer Types (byte, short, int, long):
+   - Default value: `0`
+
+   ```java
+   int[] intArray = new int[5]; // All elements are initialized to 0
+   ```
+
+2. Floating-Point Types (float, double):
+   - Default value: `0.0`
+
+   ```java
+   double[] doubleArray = new double[5]; // All elements are initialized to 0.0
+   ```
+
+3. Character Type (char):
+   - Default value: `'\u0000'` (the null character)
+
+   ```java
+   char[] charArray = new char[5]; // All elements are initialized to '\u0000'
+   ```
+
+4. Boolean Type (boolean):
+   - Default value: `false`
+
+   ```java
+   boolean[] booleanArray = new boolean[5]; // All elements are initialized to false
+   ```
+
+5. Object Types (including arrays of objects like String, Integer, etc.):
+   - Default value: `null`
+
+   ```java
+   String[] stringArray = new String[5]; // All elements are initialized to null
+   ```
+
+Here is a complete example that demonstrates the default values of different types of arrays:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Integer array
+        int[] intArray = new int[5];
+        System.out.print("Integer array default values: ");
+        for (int value : intArray) {
+            System.out.print(value + " "); // Outputs: 0 0 0 0 0
+        }
+
+        // Double array
+        double[] doubleArray = new double[5];
+        System.out.print("\nDouble array default values: ");
+        for (double value : doubleArray) {
+            System.out.print(value + " "); // Outputs: 0.0 0.0 0.0 0.0 0.0
+        }
+
+        // Char array
+        char[] charArray = new char[5];
+        System.out.print("\nChar array default values: ");
+        for (char value : charArray) {
+            System.out.print(value + " "); // Outputs: 0 0 0 0 0 (as blank spaces)
+        }
+
+        // Boolean array
+        boolean[] booleanArray = new boolean[5];
+        System.out.print("\nBoolean array default values: ");
+        for (boolean value : booleanArray) {
+            System.out.print(value + " "); // Outputs: false false false false false
+        }
+
+        // String array
+        String[] stringArray = new String[5];
+        System.out.print("\nString array default values: ");
+        for (String value : stringArray) {
+            System.out.print(value + " "); // Outputs: null null null null null
+        }
+    }
+}
+```
+
+This program demonstrates the default values for different types of arrays in Java.

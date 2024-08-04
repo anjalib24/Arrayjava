@@ -1,0 +1,62 @@
+In Java, you cannot declare an array without specifying its size or providing initial values, because arrays are fixed in size. However, you can declare a reference to an array without initializing it immediately. You must then initialize it later with a specific size. 
+
+Here's an example to illustrate this:
+
+ Declaring an Array Without Initializing
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Declare an array reference
+        int[] array;
+
+        // Later, initialize the array with a specific size
+        array = new int[5];
+
+        // Assign values to the array
+        array[0] = 1;
+        array[1] = 2;
+        array[2] = 3;
+        array[3] = 4;
+        array[4] = 5;
+
+        // Print the array elements
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+    }
+}
+```
+
+In this example:
+- `int[] array;` declares a reference to an array of integers.
+- `array = new int[5];` initializes the array with a specific size later in the code.
+
+If you need a collection that can change size dynamically, as mentioned before, you should use classes from the Java Collections Framework, such as `ArrayList`. `ArrayList` does not require you to specify the size at the time of declaration.
+
+Using `ArrayList`
+
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        // Declare and initialize an ArrayList
+        ArrayList<Integer> arrayList = new ArrayList<>();
+
+        // Add elements to the ArrayList
+        arrayList.add(1);
+        arrayList.add(2);
+        arrayList.add(3);
+        arrayList.add(4);
+        arrayList.add(5);
+
+        // Print the elements of the ArrayList
+        for (int i = 0; i < arrayList.size(); i++) {
+            System.out.print(arrayList.get(i) + " ");
+        }
+    }
+}
+```
+
+Using `ArrayList`, you can add and remove elements dynamically without worrying about the initial size.

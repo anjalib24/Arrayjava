@@ -1,0 +1,103 @@
+A 2D (two-dimensional) array in Java is an array of arrays, where each element is itself an array. This structure allows you to create a matrix-like arrangement where you can access elements using two indices: one for the row and one for the column.
+
+ Example of a 2D Array in Java
+
+Let's create a simple 2D array of integers and demonstrate basic operations such as initialization, accessing elements, and iterating through the array.
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Declaring and initializing a 2D array
+        int[][] array = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        // Accessing elements of the 2D array
+        System.out.println("Element at row 1, column 2: " + array[1][2]); // Outputs: 6
+        System.out.println("Element at row 0, column 0: " + array[0][0]); // Outputs: 1
+
+        // Changing an element of the 2D array
+        array[2][1] = 10; // Changing the element at row 2, column 1 to 10
+
+        // Iterating through the 2D array and printing each element
+        System.out.println("2D array elements:");
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println(); // New line for each row
+        }
+    }
+}
+```
+
+Explanation:
+1. Declaring and Initializing a 2D Array:
+   ```java
+   int[][] array = {
+       {1, 2, 3},
+       {4, 5, 6},
+       {7, 8, 9}
+   };
+   ```
+   This line declares and initializes a 2D array with 3 rows and 3 columns.
+
+2. Accessing Elements:
+   ```java
+   System.out.println("Element at row 1, column 2: " + array[1][2]); // Outputs: 6
+   System.out.println("Element at row 0, column 0: " + array[0][0]); // Outputs: 1
+   ```
+   Elements are accessed using two indices: the first for the row and the second for the column.
+
+3. Changing an Element:
+   ```java
+   array[2][1] = 10; // Changing the element at row 2, column 1 to 10
+   ```
+   This line changes the element at the specified position to 10.
+
+4. Iterating Through the 2D Array:
+   ```java
+   for (int i = 0; i < array.length; i++) {
+       for (int j = 0; j < array[i].length; j++) {
+           System.out.print(array[i][j] + " ");
+       }
+       System.out.println(); // New line for each row
+   }
+   ```
+   This nested loop iterates through each element of the 2D array and prints it. The outer loop iterates through the rows, and the inner loop iterates through the columns of each row.
+Complete Example
+
+Here is the complete code for reference:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Declaring and initializing a 2D array
+        int[][] array = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        // Accessing elements of the 2D array
+        System.out.println("Element at row 1, column 2: " + array[1][2]); // Outputs: 6
+        System.out.println("Element at row 0, column 0: " + array[0][0]); // Outputs: 1
+
+        // Changing an element of the 2D array
+        array[2][1] = 10; // Changing the element at row 2, column 1 to 10
+
+        // Iterating through the 2D array and printing each element
+        System.out.println("2D array elements:");
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println(); // New line for each row
+        }
+    }
+}
+```
+
+This example demonstrates how to work with a 2D array in Java, including declaration, initialization, accessing elements, modifying elements, and iterating through the array.

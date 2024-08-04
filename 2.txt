@@ -1,0 +1,60 @@
+In Java, there are a couple of ways to create and initialize arrays. Here are some examples:
+
+Declaring and Initializing an Array
+
+1. Static Initialization:
+   This method initializes the array at the time of declaration.
+   ```java
+   int[] array = {1, 2, 3, 4, 5};
+   ```
+
+2. Dynamic Initialization:
+   This method allows you to declare the array first and then initialize it.
+   ```java
+   // Declare an array of integers
+   int[] array;
+
+   // Allocate memory for 5 integers
+   array = new int[5];
+
+   // Initialize array elements
+   array[0] = 1;
+   array[1] = 2;
+   array[2] = 3;
+   array[3] = 4;
+   array[4] = 5;
+   ```
+
+### Example of Array Usage in Java
+
+Here is a complete example demonstrating array declaration, initialization, and usage:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Static Initialization
+        int[] staticArray = {1, 2, 3, 4, 5};
+        
+        // Dynamic Initialization
+        int[] dynamicArray = new int[5];
+        dynamicArray[0] = 1;
+        dynamicArray[1] = 2;
+        dynamicArray[2] = 3;
+        dynamicArray[3] = 4;
+        dynamicArray[4] = 5;
+
+        // Printing array elements
+        System.out.println("Static Array Elements:");
+        for (int i = 0; i < staticArray.length; i++) {
+            System.out.print(staticArray[i] + " ");
+        }
+        
+        System.out.println("\nDynamic Array Elements:");
+        for (int i = 0; i < dynamicArray.length; i++) {
+            System.out.print(dynamicArray[i] + " ");
+        }
+    }
+}
+```
+
+This program demonstrates how to declare, initialize, and print the elements of arrays in Java.

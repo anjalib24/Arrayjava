@@ -1,0 +1,83 @@
+A 1D (one-dimensional) array in Java is a linear array that holds a sequence of elements of the same type. It's like a list where each element can be accessed by its index, starting from 0.
+
+ Example of a 1D Array in Java
+
+Let's create a simple 1D array of integers and demonstrate basic operations such as initialization, accessing elements, and iterating through the array.
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Declaring and initializing a 1D array
+        int[] array = {1, 2, 3, 4, 5};
+
+        // Accessing elements of the array
+        System.out.println("First element: " + array[0]); // Outputs: First element: 1
+        System.out.println("Second element: " + array[1]); // Outputs: Second element: 2
+
+        // Changing an element of the array
+        array[2] = 10; // Changing the third element to 10
+
+        // Iterating through the array and printing each element
+        System.out.println("Array elements:");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " "); // Outputs: 1 2 10 4 5
+        }
+    }
+}
+```
+
+Explanation:
+1. Declaring and Initializing a 1D Array:
+   ```java
+   int[] array = {1, 2, 3, 4, 5};
+   ```
+   This line declares and initializes an array of integers with 5 elements.
+
+2. Accessing Elements:
+   ```java
+   System.out.println("First element: " + array[0]); // Outputs: First element: 1
+   System.out.println("Second element: " + array[1]); // Outputs: Second element: 2
+   ```
+   Array elements are accessed using their index. The first element has an index of 0, the second has an index of 1, and so on.
+
+3. Changing an Element:
+   ```java
+   array[2] = 10; // Changing the third element to 10
+   ```
+   This line changes the third element of the array to 10.
+
+4. Iterating Through the Array:
+   ```java
+   for (int i = 0; i < array.length; i++) {
+       System.out.print(array[i] + " "); // Outputs: 1 2 10 4 5
+   }
+   ```
+   This loop iterates through each element of the array and prints it.
+
+Complete Example
+
+Here is the complete code for reference:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Declaring and initializing a 1D array
+        int[] array = {1, 2, 3, 4, 5};
+
+        // Accessing elements of the array
+        System.out.println("First element: " + array[0]); // Outputs: First element: 1
+        System.out.println("Second element: " + array[1]); // Outputs: Second element: 2
+
+        // Changing an element of the array
+        array[2] = 10; // Changing the third element to 10
+
+        // Iterating through the array and printing each element
+        System.out.println("Array elements:");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " "); // Outputs: 1 2 10 4 5
+        }
+    }
+}
+```
+
+This example shows how to work with a 1D array in Java, covering declaration, initialization, accessing elements, modifying elements, and iterating through the array.
